@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <title>学生管理系统</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>学生管理系统</h1>
+        </header>
+        <div class="link">
+            <a href="/add">添加</a>
+            <a href="/search">查询</a>
+            <a href="/del">删除</a>
+            <a href="update">修改</a>
+        </div>
+        <div class="content">
+            <table border='1px' style="width:560px" cellspacing='0' cellpadding="2px" border-collpase:collpase border-spacing:0>
+                <tr>
+                    <td>姓名</td>
+                    <td>性别</td>
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英语</td>
+                </tr>
+                <% for(var i=0;i<result.length;i++){ %>
+                    <tr>
+                        <td><%= result[i].name %></td>
+                        <td><%= result[i].sex %></td>
+                        <td><%= result[i].chinese %></td>
+                        <td><%= result[i].math %></td>
+                        <td><%= result[i].english %></td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

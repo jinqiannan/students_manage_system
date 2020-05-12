@@ -1,0 +1,23 @@
+*{margin:0;padding:0;list-style:none;text-decoration: none;}
+
+#wrap{
+    margin:30px auto 0;
+    width:600px;
+}
+header{
+    margin-bottom:20px;
+}
+a{
+    color:skyblue;
+    margin-right:30px;
+}
+table{
+    margin-top:20px;
+    width:560px;
+    text-align:center;
+    vertical-align: middle;
+}
+td{
+    height:30px;
+    width:112px;
+}
